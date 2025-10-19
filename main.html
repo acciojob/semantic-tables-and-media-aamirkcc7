@@ -1,16 +1,128 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Media Collection</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #fafafa;
+      margin: 30px;
+      color: #333;
+    }
+
+    h1 {
+      text-align: center;
+      color: #444;
+    }
+
+    table {
+      width: 80%;
+      margin: 20px auto;
+      border-collapse: collapse;
+      border: 1px solid #ccc;
+      background-color: #fff;
+    }
+
+    caption {
+      caption-side: top;
+      font-weight: bold;
+      margin-bottom: 10px;
+      font-size: 18px;
+      color: #333;
+    }
+
+    th, td {
+      border: 1px solid #ccc;
+      padding: 10px;
+      text-align: center;
+    }
+
+    thead {
+      background-color: #f0f0f0;
+    }
+
+    tbody tr:hover {
+      background-color: #f9f9f9;
+    }
+
+    ol {
+      width: 80%;
+      margin: 30px auto;
+      background-color: #fff;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      padding: 20px;
+      list-style-position: inside;
+    }
+
+    ol li {
+      margin-bottom: 15px;
+      font-weight: 500;
+    }
+
+    video, audio, img {
+      display: block;
+      margin: 10px 0;
+      border-radius: 6px;
+    }
+  </style>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+  <h1>My Media Collection</h1>
 
+  <!-- Semantic HTML Table -->
+  <table>
+    <caption>Media Information Table</caption>
+    <thead>
+      <tr>
+        <th>Media Type</th>
+        <th>Title</th>
+        <th>Duration / Size</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Image</td>
+        <td>Sunset Landscape</td>
+        <td>2.1 MB</td>
+      </tr>
+      <tr>
+        <td>Audio</td>
+        <td>Calm Ocean Waves</td>
+        <td>3:45 mins</td>
+      </tr>
+      <tr>
+        <td>Video</td>
+        <td>Mountain Time-lapse</td>
+        <td>2:30 mins</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Ordered List with Media Items -->
+  <ol>
+    <li>
+      <strong>Image:</strong> Beautiful Sunset
+      <img src="https://images.unsplash.com/photo-1501973801540-537f08ccae7b" alt="Sunset Landscape" width="300">
+    </li>
+
+    <li>
+      <strong>Audio:</strong> Ocean Waves Sound
+      <audio controls>
+        <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+    </li>
+
+    <li>
+      <strong>Video:</strong> Mountain View
+      <video controls width="300">
+        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </li>
+  </ol>
 </body>
-
 </html>
